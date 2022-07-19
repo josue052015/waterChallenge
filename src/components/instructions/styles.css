@@ -1,0 +1,14 @@
+table {
+    
+    position: relative;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 12%;
+}
+
+table th, table td {
+    border: 1px solid #9747FF;
+}
+
