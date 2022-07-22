@@ -20,29 +20,29 @@ const InstructionsComponent = ({ waterJugInformation }) => {
     )
 
     const areValidJugMeasures = (bucketX, bucketY, waterAmount) => {
-       
+
         if (bucketX + bucketY == waterAmount) return true;
 
         if (bucketX > bucketY) {
             if ((waterAmount % bucketY) > 0 && ((bucketX !== waterAmount) && (bucketY !== waterAmount))) return false
 
-            switch((bucketX < waterAmount)){
+            switch ((bucketX < waterAmount)) {
                 case true:
-                    
-                if(((bucketX + bucketY) > waterAmount) || (bucketX + bucketY) < waterAmount) return false
-                
+
+                    if (((bucketX + bucketY) > waterAmount) || (bucketX + bucketY) < waterAmount) return false
+
                     break;
             }
-            
+
         }
         if (bucketY > bucketX) {
             if ((waterAmount % bucketX) > 0 && ((bucketX !== waterAmount) && (bucketY !== waterAmount))) return false
-            
-            switch((bucketY < waterAmount)){
+
+            switch ((bucketY < waterAmount)) {
                 case true:
-                    
-                if(((bucketX + bucketY) > waterAmount) || (bucketX + bucketY) < waterAmount) return false
-                
+
+                    if (((bucketX + bucketY) > waterAmount) || (bucketX + bucketY) < waterAmount) return false
+
                     break;
             }
         }
@@ -143,7 +143,8 @@ const InstructionsComponent = ({ waterJugInformation }) => {
     return (
         <>
             {
-                instructions.length > 0 ?
+                instructions.length > 0
+                    ?
                     <table>
                         <thead>
                             <tr>
@@ -166,13 +167,9 @@ const InstructionsComponent = ({ waterJugInformation }) => {
                             }
                         </tbody>
                     </table>
-
                     :
-
                     <NoSolutionMessage />
             }
-
-
         </>
     )
 }
