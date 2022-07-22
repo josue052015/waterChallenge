@@ -1,7 +1,9 @@
 To run the project you need to run the following command in the terminal:
 
-1-npm install --save @types/react
-2-npm start
+1- npm install --save @types/react
+
+
+2- npm start
 
 There´s the proyect running in live: https://waterjugchallenge.netlify.app/
 
